@@ -6,7 +6,7 @@
     npm ci
   ```
 
-* Please create an account in gnews.io to get the api key. Replace the actual api key with <Apikey> in below export command, 
+* Please create an account in [GNews](https://gnews.io/register) to get the api key. Replace the actual api key with <Apikey> in below export command, 
 * ```
   export NODE_CONFIG='{"gnews": {"apiKey":"<apikey>"}}'
   ```
@@ -27,6 +27,11 @@
 * Layering architecture with singleton patten has been adopted.
 * config module is used to manage configs.
 * Two APIs /api/news and /api/news/search are introduced. 
+
+## Testing Approach
+* Manually tested and unit test cases are added using Jest.
+* For /api/news api , specs are added to ensure response structure, handling errors from gnews and returning to user and also ensure lang is passed correctly.
+* For /api/news/search, unit test cases are added to ensure q query params is passed, search results are cached and returned from cache for subsequent requests for same query params. 
 
 ## API Changes
 
