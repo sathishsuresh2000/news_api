@@ -1,0 +1,16 @@
+{
+  "server": {
+    "port": "3000"
+  },
+  "gnews": {
+    "server": "https://gnews.io",
+    "apiVersion": "/api/v4",
+    "searchApi": "/search",
+    "headlinesApi": "/top-headlines",
+    "apiKey": ""
+  },
+  "cache": {
+    "stdTTL": 3600,
+    "checkperiod": 600
+  }
+}
